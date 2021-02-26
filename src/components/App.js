@@ -1,5 +1,12 @@
 import React from 'react';
 import Header from './Header.js';
+// import HotelControl from "./HotelControl";
+import Signin from './Signin';
+import Register from './Register';
+import Signout from './Signout';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Navbar from './Navbar.js';
+
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Signin from './../Signin';
-import SignOut from './../SignOut';
-import Register from './../Register';
+import Signin from './Signin';
+import Signout from './Signout';
+import Register from './Register';
 import {
   FormControl as FormControl,
   Button as Button,
