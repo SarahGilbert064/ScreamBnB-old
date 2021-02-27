@@ -1,6 +1,6 @@
 <center>
 
-# **Taproom**
+# **ScreamBnB**
 Project Initiated: 26-02-2021
 Updated: 26-02-2021
 
