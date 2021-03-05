@@ -28,7 +28,7 @@ class HotelControl extends React.Component {
   handleChangingSelectedHotel = (id) => {
     this.props.withFirestore
     .get({collection: 'hotels', doc: id})
-    .then((memory)  => {
+    .then((hotel)  => {
       const firestoreHotel = {
         name: hotel.get('name'),
         location: hotel.get('location'),

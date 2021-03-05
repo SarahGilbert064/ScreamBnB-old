@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 function HotelDetail(props) {
-  const { hotel } = props;
+  const { hotel, onClickingDelete } = props;
 
   return(
     <>

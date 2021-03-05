@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './Header.js';
-// import HotelControl from "./HotelControl";
+import HotelControl from "./HotelControl";
 import Signin from './Signin';
 import Register from './Register';
-import Signout from './Signout';
+import SignOut from './SignOut';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navbar from './Navbar.js';
 
@@ -22,11 +22,11 @@ function App() {
         <Route path ="/register" component={Register}>
           <Register/>
         </Route>
-        <Route path ="/signout" component={Signout}>
+        <Route path ="/signOut" component={SignOut}>
           <SignOut/>
         </Route>
         <Route path ="/" component={App}>
-          <MemoryControl />
+          <HotelControl />
         </Route>
       </Switch>
     </Router>

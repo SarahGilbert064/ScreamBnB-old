@@ -2,7 +2,7 @@ import React from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Signin from './Signin';
-import Signout from './Signout';
+import SignOut from './SignOut';
 import Register from './Register';
 import {
   FormControl as FormControl,
@@ -25,7 +25,7 @@ const Navbar = () => {
         <Route path ="/register">
           <Register />
         </Route> 
-        <Route path ="/signout">
+        <Route path ="/signOut">
           <SignOut />
         </Route> 
       </Switch>
@@ -39,7 +39,7 @@ const Navbar = () => {
         <ReactBootStrap.Nav.Link href="#register">Register</ReactBootStrap.Nav.Link>
         </Link>
         <Link to ='/SignOut'>
-        <ReactBootStrap.Nav.Link href="#signout">Sign Out</ReactBootStrap.Nav.Link>
+        <ReactBootStrap.Nav.Link href="#signOut">Sign Out</ReactBootStrap.Nav.Link>
         </Link>
       </ReactBootStrap.Nav>
       <Form inline>
