@@ -9,7 +9,7 @@ function HotelDetail(props) {
     <h1>Hotel Details</h1>
     <h3>{hotel.name}</h3>
     <h3>{hotel.location}</h3>
-    <p><em>{hotel.reviews}</em></p>
+    <p><em>{hotel.review}</em></p>
     <br></br>
     <button onClick = { props.onClickingEdit }>Update Hotel Info/Review</button>
     <button onClick ={() => onClickingDelete(hotel.id)}>Delete Hotel/Review?</button>

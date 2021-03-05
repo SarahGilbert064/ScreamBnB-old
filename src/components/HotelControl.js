@@ -14,7 +14,7 @@ class HotelControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedMemory: null,
+      selectedHotel: null,
       editing: false
     };
   }
@@ -26,7 +26,7 @@ class HotelControl extends React.Component {
   }
 
   handleChangingSelectedHotel = (id) => {
-    this.props.withFirestore
+    this.props.firestore
     .get({collection: 'hotels', doc: id})
     .then((hotel)  => {
       const firestoreHotel = {
@@ -113,7 +113,7 @@ class HotelControl extends React.Component {
         currentlyVisibleState =
         <HotelList
         hotelList = {this.props.masterHotelList}
-        onMemorySelection = {this.handleChangingSelectedHotel}/>
+        onHotelSelection = {this.handleChangingSelectedHotel}/>
         buttonText = 'Add Hotel';
       }
 

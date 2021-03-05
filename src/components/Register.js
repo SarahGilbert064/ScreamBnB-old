@@ -1,6 +1,6 @@
 import React from  'react';
 import firebase from 'firebase/app';
-import { Redirect, Route, useHistory, useLocation, Link, Switch}  from 'react-router-dom';
+import { useHistory }  from 'react-router-dom';
 
 function Register() {
 

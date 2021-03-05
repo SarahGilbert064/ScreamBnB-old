@@ -4,7 +4,7 @@ import HotelControl from "./HotelControl";
 import Signin from './Signin';
 import Register from './Register';
 import SignOut from './SignOut';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './Navbar.js';
 
 
