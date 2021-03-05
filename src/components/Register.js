@@ -15,6 +15,8 @@ function Register() {
     margin: '50px',
   }
 
+  const history = useHistory();
+
   function doRegister(event) {
     event.preventDefault();
     const email = event.target.email.value;
