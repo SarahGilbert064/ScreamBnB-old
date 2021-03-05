@@ -15,11 +15,11 @@ code {
     monospace;
 }
 
-#header {
+/* #header {
   background-image:url(./img/logoWord.PNG);
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 #hotelEntry {
   padding: 20px;
