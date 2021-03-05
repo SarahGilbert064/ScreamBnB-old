@@ -12,3 +12,5 @@
 3/5/2021
 
 11:10am -Designing brand logo with Tailor Brands
+
+12:30pm -stopped designing/fighting with logo/styling, going to lunch

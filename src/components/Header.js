@@ -1,4 +1,6 @@
 import React from "react";
+import logo from './../img/logo.png';
+
 
 function Header() {
 
@@ -16,7 +18,7 @@ function Header() {
       <div class ='row'>
         <div class ='column'>
           <div style={appStyle}>
-            <h4><center>Enter if you dare!</center></h4>
+
           </div>
         </div>
       </div>
