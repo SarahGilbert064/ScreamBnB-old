@@ -18,7 +18,7 @@ function Header() {
       <div class ='row'>
         <div class ='column'>
           <div style={appStyle}>
-
+            <h4>Logo goes here</h4>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ function SignOut() {
       history.push('/signin');
 			console.log("successfully signed out!");
 		}).catch(function(error) {
-			console.log("error");
+			console.log("error signing in");
 		});
   }
 

@@ -114,7 +114,7 @@ class HotelControl extends React.Component {
         <HotelList
         hotelList = {this.props.masterHotelList}
         onMemorySelection = {this.handleChangingSelectedHotel}/>
-        buttonText = 'Add Hotle';
+        buttonText = 'Add Hotel';
       }
 
       return(
