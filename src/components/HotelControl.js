@@ -2,12 +2,14 @@ import React from 'react';
 import NewHotelForm from './NewHotelForm';
 import HotelList from './HotelList';
 import HotelDetail from './HotelDetail';
+import EditHotelForm from './EditHotelForm';
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import { withFirestore, isLoaded } from 'react-redux-firebase';
-import Hotel from './Hotel';
+import * as a from './../actions';
 
-class HotleControl extends React.Component {
+
+class HotelControl extends React.Component {
 
   constructor(props) {
     super(props);
@@ -124,3 +126,17 @@ class HotleControl extends React.Component {
     }
   }
 }
+
+HotelControl.propTypes = {
+  formVisibleOnPage: PropTypes.bool 
+}
+
+const mapStateToProps = state => {
+  return {
+    formVisibleOnPage: state.formVisibleOnPage
+  }
+}
+
+HotelControl = connect(mapStateToProps)(HotelControl);
+
+export default withFirestore(HotelControl);
