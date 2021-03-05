@@ -15,17 +15,17 @@ function HotelList(props) {
   if(isLoaded(hotels)) {
     return(
       <>
-      <hr/>
-      {hotels.map((hotel) => {
-        return <Hotel
-          whenHotelClicked = { props.onHotelSelection }
-          name = { hotel.name }
-          location = { hotel.location }
-          review = { hotel.review }
-          id = { hotel.id }
-          key = { hotel.id }/>
-      })}
-      <hr></hr>
+        <hr/>
+          {hotels.map((hotel) => {
+            return <Hotel
+              whenHotelClicked = { props.onHotelSelection }
+              name = { hotel.name }
+              location = { hotel.location }
+              review = { hotel.review }
+              id = { hotel.id }
+              key = { hotel.id }/>
+          })}
+        <hr></hr>
       </>
     );
   } else {
