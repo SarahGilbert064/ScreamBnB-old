@@ -55,5 +55,72 @@ class HotleControl extends React.Component {
     });
   }
 
-  
+  handleClick = () => {
+    if (this.state.selectedHotel != null) {
+      this.setState({
+        selectedHotel: null,
+        editing: false 
+      });
+    } else {
+      const { dispatch } = this.props;
+      const action = a.toggleForm();
+      dispatch(action);
+    }
+  }
+
+  render() {
+    const auth = this.props.firebase.auth();
+    if(!isLoaded(auth)) {
+      return (
+        <>
+        <h1>Loading...</h1>
+        </>
+      )
+    }
+    if((isLoaded(auth)) && (auth.currentUser == null)) {
+      return (
+        <>
+        <h4><center>You must be signed in to access ScreamBnB</center></h4>
+        </>
+      )
+    }
+    if((isLoaded(auth)) && (auth.currentUser != null)) {
+      let currentlyVisibleState = null;
+      let buttonText = null;
+
+      if (this.state.editing) {
+        currentlyVisibleState =
+        <EditHotelForm
+        hotel = {this.state.selectedHotel}
+        onEditHotel = {this.handleEditingHotelInList} />
+        buttonText = "Return to Hotel List";
+      } else if (this.state.selectedHotel != null) {
+        currentlyVisibleState =
+        <HotelDetail
+        hotel = {this.state.selectedHotel}
+        onClickingDelete = {this.handleDeletingHotel}
+        onClickingEdit = {this.handleEditClick}/>
+        buttonText = 'Return to Hotel List';
+      } else if (this.props.formVisibleOnPage) {
+        currentlyVisibleState =
+        <NewHotelForm
+        onNewHotelCreation = {this.handleAddingNewHotelToList}
+        onEditHotel = {this.handleEditingHotelInList}/>
+        buttonText = "Return to Hotel List";
+      } else {
+        currentlyVisibleState =
+        <HotelList
+        hotelList = {this.props.masterHotelList}
+        onMemorySelection = {this.handleChangingSelectedHotel}/>
+        buttonText = 'Add Hotle';
+      }
+
+      return(
+        <>
+        {currentlyVisibleState}
+        <button style ={{marginLeft: '45%'}} onClick = {this.handleClick}>{buttonText}</button>
+        </>
+      );
+    }
+  }
 }

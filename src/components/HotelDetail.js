@@ -11,7 +11,7 @@ function HotelDetail(props) {
     <h3>{hotel.location}</h3>
     <p><em>{hotel.reviews}</em></p>
     <br></br>
-    {/* <button onClick = { props.onClickingEdit }>Update Hotel Info/Review</button> */}
+    <button onClick = { props.onClickingEdit }>Update Hotel Info/Review</button>
     <button onClick ={() => onClickingDelete(hotel.id)}>Delete Hotel/Review?</button>
     </>
   );
@@ -19,8 +19,8 @@ function HotelDetail(props) {
 
 HotelDetail.propTypes = {
   hotel: PropTypes.object,
-  onClickingDelete: PropTypes.func
-  // onClickingEdit: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func
 }
 
 export default HotelDetail;
