@@ -82,7 +82,7 @@ class HotelControl extends React.Component {
     if((isLoaded(auth)) && (auth.currentUser == null)) {
       return (
         <>
-        <h4><center>You must be signed in to access ScreamBnB</center></h4>
+        <p><center>You must be signed in to access ScreamBnB</center></p>
         </>
       )
     }

@@ -13,8 +13,12 @@ function Header() {
   }
   return (
     <React.Fragment>
-      <div style={appStyle}>
-        <h1><center>Enter if you dare!</center></h1>
+      <div class ='row'>
+        <div class ='column'>
+          <div style={appStyle}>
+            <h4><center>Enter if you dare!</center></h4>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );
