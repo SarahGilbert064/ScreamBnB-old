@@ -9,7 +9,7 @@ ScreamBnB is a hotel, motel, and BnB booking sight for those who want to spice u
 
 List the absolute minimum features the project requires to meet this purpose or goal:
 
-* User authenication for those who want to save leave a review on their stay and/or add to the fanbase 'suggestions' list
+* User authenication for those who want to leave a review on their stay and/or add to the fanbase 'suggestions' list
 * Built in database with information on haunted places, their history, location, and reviews
 * Information/links for history and booking a stay
 

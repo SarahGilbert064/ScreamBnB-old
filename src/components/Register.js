@@ -12,7 +12,7 @@ function Register() {
     borderStyle:'groove',
     width: '90%',
     height: "200",
-    margin: '50px',
+    margin: '80px',
   }
 
   const history = useHistory();

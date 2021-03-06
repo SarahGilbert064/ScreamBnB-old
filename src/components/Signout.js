@@ -12,7 +12,7 @@ function SignOut() {
     borderStyle:'groove',
     width: '90%',
     height: "200",
-    margin: '50px',
+    margin: '90px',
   }
 
   const history = useHistory();
@@ -31,7 +31,7 @@ function SignOut() {
     <div class="row">
       <div class = "column">
         <div style={myStyledSignOut}>
-          <h1>Sign Out</h1>
+          <p><em>Come Back Soon!</em></p>
             <button onClick = {doSignOut}>Sign Out</button>
         </div>
       </div> 
