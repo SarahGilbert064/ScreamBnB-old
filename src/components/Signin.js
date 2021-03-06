@@ -6,12 +6,12 @@ function Signin() {
 
   const myStyledSignin = {
     backgroundColor: 'silver',
-    border: '12px black',
+    border: '2px black',
 		textAlign: 'center',
-    padding: '34px',
+    padding: '5px',
     borderStyle:'groove',
-    borderRadius: '50%/100%',
     width: '90%',
+    height: "200",
     margin: '50px',
   }
 
@@ -32,21 +32,25 @@ function Signin() {
 
   return (
 		<>
-      <div style ={myStyledSignin}>
-        <h1>Sign In</h1>
-        <form onSubmit={doSignIn}>
-          <input
-            type = 'text'
-            name = 'signinEmail'
-            placeholder = 'email' />
-            <br></br>
-          <input
-            type='password'
-            name='signinPassword'
-            placeholder='Password' />	
-            <br></br>
-          <button type='submit'>Sign In</button>
-        </form>
+      <div class ="row">
+        <div class = 'column'>
+          <div style ={myStyledSignin}>
+            <h4>Sign In</h4>
+            <form onSubmit={doSignIn}>
+              <input
+                type = 'text'
+                name = 'signinEmail'
+                placeholder = 'email' />
+                <br></br>
+              <input
+                type='password'
+                name='signinPassword'
+                placeholder='Password' />	
+                <br></br>
+              <button type='submit'>Sign In</button>
+            </form>
+          </div>
+        </div>
       </div>
     </>
   );

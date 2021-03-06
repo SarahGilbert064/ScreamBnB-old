@@ -6,12 +6,12 @@ function Register() {
 
   const myStyledRegister = {
     backgroundColor: 'silver',
-    border: '12px black',
-    textAlign: 'center',
-    padding: '34px',
-    borderStyle: 'groove',
-    borderRadius: '50%/100%',
-    width:'90%',
+    border: '2px black',
+		textAlign: 'center',
+    padding: '5px',
+    borderStyle:'groove',
+    width: '90%',
+    height: "200",
     margin: '50px',
   }
 
@@ -31,21 +31,25 @@ function Register() {
 
   return (
     <>
-    <div style={myStyledRegister}>
-      <h1>Register for ScreamBnB</h1>
-      <form onSubmit ={doRegister}>
-        <input
-          type='text'
-          name='email'
-          placeholder='Email' />
-          <br></br>
-        <input
-          type='password'
-          name='password'
-          placeholder='Password' />
-          <br></br>
-        <button type='submit'>Register Your Account</button>
-      </form>
+    <div class ="row">
+      <div class = 'column'>
+        <div style={myStyledRegister}>
+          <h4>Register</h4>
+          <form onSubmit ={doRegister}>
+            <input
+              type='text'
+              name='email'
+              placeholder='Email' />
+              <br></br>
+            <input
+              type='password'
+              name='password'
+              placeholder='Password' />
+              <br></br>
+            <button type='submit'>Register Your Account</button>
+          </form>
+        </div>
+      </div>
     </div>
     </>
   );

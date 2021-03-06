@@ -6,12 +6,12 @@ function SignOut() {
 
   const myStyledSignOut = {
     backgroundColor: 'silver',
-    border: '12px black',
+    border: '2px black',
 		textAlign: 'center',
-    padding: '34px',
+    padding: '5px',
     borderStyle:'groove',
-    borderRadius: '50%/100%',
     width: '90%',
+    height: "200",
     margin: '50px',
   }
 
@@ -28,10 +28,14 @@ function SignOut() {
 
   return (
     <>
-    <div style={myStyledSignOut}>
-      <h1>Sign Out</h1>
-        <button onClick = {doSignOut}>Sign Out</button>
-    </div>
+    <div class="row">
+      <div class = "column">
+        <div style={myStyledSignOut}>
+          <h1>Sign Out</h1>
+            <button onClick = {doSignOut}>Sign Out</button>
+        </div>
+      </div> 
+    </div> 
     </>
   );
 }
